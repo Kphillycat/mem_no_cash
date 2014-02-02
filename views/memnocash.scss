@@ -133,6 +133,11 @@ h1 {
   margin: auto;
   .player, .score {
     display: inline-block;
+
+    h2{
+      position: relative;
+      margin: 30px 0;
+    }
   }
   .user {
     h2 {
