@@ -1,0 +1,10 @@
+%h1 Mem No Cash - The memory game with the illusion of cash prizes
+.board
+  - @cards.each do |card|
+    = partial :card, @card=card
+= partial :scoreboard
+%footer
+  %div
+  powered by gambit and trebek, (c)2014 ashley williams
+%script{:src=>"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+%script{:src=>"/memNoCash.js"}
